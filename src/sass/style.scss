@@ -11,7 +11,7 @@
 
 :root {
 	font-size: 62.5%;
-	font-family: sans-serif;
+	font-family: 'Barlow Condensed', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -21,6 +21,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 ul {
@@ -46,6 +47,128 @@ textarea {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+///////////////////////
+///     Top bar     ///
+///////////////////////
+
+.top-bar {
+	display: flex;
+	flex-direction: column;
+
+	&__up {
+		background-color: colors.$main-color;
+		color: colors.$white;
+
+		&-container {
+			padding: 2em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&-left {
+			i,
+			a {
+				font-size: 2.4rem;
+			}
+			i {
+				margin-right: 1rem;
+			}
+
+			.mail {
+				display: none;
+			}
+		}
+
+		&-right {
+			display: none;
+		}
+	}
+
+	&__down {
+		position: relative;
+		background-color: colors.$light-dark;
+		color: colors.$white;
+
+		&-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 2em;
+		}
+
+		&-logo {
+			font-size: 4rem;
+		}
+
+		&-nav {
+			&--mobile {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				padding: 3em;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(40px);
+				transition: transform 0.3s linear, visibility 0.3s linear,
+					opacity 0.3s linear;
+
+				&-active {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+
+				a {
+					color: black;
+					font-size: 2.5rem;
+					font-weight: bold;
+
+					&:not(&:last-child) {
+						margin-bottom: 0.5em;
+					}
+				}
+			}
+
+			&--desktop {
+				display: none;
+			}
+		}
+
+		&-hamburger {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			padding: 1em;
+			border: 1px solid #fff;
+			border-radius: 3px;
+			cursor: pointer;
+
+			span {
+				display: block;
+				width: 25px;
+				height: 2px;
+				background-color: colors.$white;
+
+				&:not(&:last-child) {
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+		&-request {
+			display: none;
+		}
+	}
 }
 
 @import 'small';
