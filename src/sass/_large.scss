@@ -38,6 +38,30 @@
 			}
 		}
 	}
+
+	.header {
+		top: -110px;
+
+		&__container {
+			padding: 30rem 3em 10em;
+		}
+
+		&__content {
+			&-top {
+				h1 {
+					max-width: 600px;
+					margin-bottom: 0.6em;
+					font-size: 8rem;
+				}
+			}
+
+			&-bottom {
+				justify-content: flex-start;
+				row-gap: 0rem;
+				column-gap: 3rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {

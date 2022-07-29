@@ -12,4 +12,38 @@
 			}
 		}
 	}
+
+	.header {
+		&__container {
+			padding: 12rem 2em 6em;
+		}
+
+		&__content {
+			text-align: left;
+
+			&-top {
+				h1 {
+					font-size: 5rem;
+					margin-bottom: 1em;
+				}
+
+				a {
+					font-size: 2.2rem;
+				}
+			}
+
+			&-bottom {
+				span {
+					font-size: 2rem;
+
+					.fa-solid {
+						width: 50px;
+						height: 50px;
+
+						line-height: 50px;
+					}
+				}
+			}
+		}
+	}
 }

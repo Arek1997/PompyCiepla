@@ -74,4 +74,29 @@
 			}
 		}
 	}
+
+	.header {
+		&__container {
+			padding: 12rem 3em 6em;
+		}
+
+		&__content {
+			&-top {
+				h1 {
+					font-size: 6rem;
+				}
+			}
+
+			&-bottom {
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				row-gap: 3rem;
+
+				span {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 }
