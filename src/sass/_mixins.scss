@@ -1,0 +1,9 @@
+@use 'colors';
+
+@mixin pseudoElements {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 55px;
+	background-color: colors.$light-dark;
+}

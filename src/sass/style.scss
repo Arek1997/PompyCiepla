@@ -89,7 +89,6 @@ table {
 
 	&__down {
 		position: relative;
-		background-color: colors.$light-dark;
 		color: colors.$white;
 
 		&-container {
@@ -97,6 +96,7 @@ table {
 			align-items: center;
 			justify-content: space-between;
 			padding: 2em;
+			background-color: colors.$light-dark;
 		}
 
 		&-logo {
@@ -104,13 +104,16 @@ table {
 		}
 
 		&-nav {
+			display: flex;
+			font-size: 2.5rem;
+			font-weight: bold;
+
 			&--mobile {
 				position: absolute;
 				top: 100%;
 				left: 0;
 				width: 100%;
 				padding: 3em;
-				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
 				opacity: 0;
@@ -127,8 +130,6 @@ table {
 
 				a {
 					color: black;
-					font-size: 2.5rem;
-					font-weight: bold;
 
 					&:not(&:last-child) {
 						margin-bottom: 0.5em;

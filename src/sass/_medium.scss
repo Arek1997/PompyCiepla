@@ -1,2 +1,77 @@
+@use 'colors';
+
 @media (min-width: 768px) {
+	.top-bar {
+		&__up {
+			position: relative;
+
+			&-container {
+				padding: 0 2em;
+				height: 70px;
+				justify-content: space-between;
+			}
+
+			&-left {
+				flex-grow: 0;
+
+				.mail {
+					margin-right: 3em;
+				}
+			}
+
+			&-right {
+				display: flex;
+				height: 100%;
+				align-items: center;
+			}
+
+			&-social {
+				a {
+					padding: 0 1em;
+					font-size: 2rem;
+
+					&:not(&:last-child) {
+						border-right: 1px solid rgba(255, 255, 255, 0.5);
+					}
+				}
+			}
+
+			&-location {
+				align-self: stretch;
+				padding: 0 2em;
+				font-size: 2rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 70px;
+				color: #252525;
+				background-color: #fff;
+			}
+		}
+
+		&__down {
+			&-container {
+				justify-content: flex-start;
+			}
+
+			&-nav {
+				&--mobile {
+					display: none;
+				}
+
+				&--desktop {
+					display: flex;
+					column-gap: 2rem;
+					margin-left: 6em;
+				}
+			}
+
+			&-hamburger {
+				display: none;
+			}
+
+			&-request {
+				display: none;
+			}
+		}
+	}
 }

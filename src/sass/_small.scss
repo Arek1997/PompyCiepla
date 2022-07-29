@@ -1,2 +1,15 @@
 @media (min-width: 576px) {
+	.top-bar {
+		&__up {
+			&-left {
+				display: flex;
+				justify-content: space-between;
+				flex-grow: 1;
+
+				.mail {
+					display: block;
+				}
+			}
+		}
+	}
 }
