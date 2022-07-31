@@ -33,13 +33,15 @@
 			}
 
 			&-bottom {
-				span {
+				gap: 3rem;
+
+				&-item {
+					justify-content: flex-start;
 					font-size: 2rem;
 
 					.fa-solid {
 						width: 50px;
 						height: 50px;
-
 						line-height: 50px;
 					}
 				}

@@ -265,14 +265,17 @@ table {
 			margin-top: 3em;
 			display: flex;
 			flex-direction: column;
+			row-gap: 1em;
 
-			span {
+			&-item {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				font-size: 1.6rem;
 				font-weight: bold;
-				margin-bottom: 1em;
 
-				&:last-child {
-					margin-bottom: 0;
+				span {
+					max-width: 150px;
 				}
 
 				.fa-solid {
