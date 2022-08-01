@@ -1,5 +1,6 @@
 @use 'colors';
 @use 'components';
+@use 'variables';
 @use 'animations';
 
 *,
@@ -110,6 +111,7 @@ table {
 	&__down {
 		position: relative;
 		color: colors.$white;
+		z-index: 1;
 
 		&-container {
 			display: flex;
@@ -204,7 +206,7 @@ table {
 	background-position: center;
 	background-size: cover;
 	color: colors.$white;
-	z-index: -1;
+	z-index: 0;
 
 	&__mask {
 		position: absolute;
@@ -229,7 +231,39 @@ table {
 		&-top {
 			h1 {
 				font-size: 3rem;
-				margin-bottom: 2em;
+				margin-bottom: 1.5em;
+			}
+
+			.path {
+				display: inline-block;
+				padding: 1.5em 3em;
+				background-color: #000;
+				border-radius: 100px;
+
+				a {
+					padding: 0;
+					color: colors.$white;
+					background: none;
+					transition: color 0.3s;
+
+					&:nth-child(1) {
+						margin-right: 1em;
+
+						&::after {
+							content: '>';
+							display: inline-block;
+							transform: translate(13px, -2px);
+						}
+					}
+
+					&:hover {
+						color: colors.$main-color;
+					}
+
+					&::before {
+						content: none;
+					}
+				}
 			}
 
 			a {
@@ -238,7 +272,7 @@ table {
 				font-size: 1.8rem;
 				background-color: colors.$main-color;
 				border-radius: 8px;
-				border-top-right-radius: 50px;
+				border-top-right-radius: variables.$radius;
 				font-weight: bold;
 				text-transform: uppercase;
 
@@ -250,11 +284,11 @@ table {
 					right: 0;
 					width: 30px;
 					height: 30px;
-					border: 3px solid #ee1d22;
+					border: 3px solid colors.$main-color;
 					font-size: 20px;
 					text-align: center;
-					color: #ee1d22;
-					background-color: #fff;
+					color: colors.$main-color;
+					background-color: colors.$white;
 					border-radius: 50%;
 					line-height: 28px;
 					transform: translate(20%, -60%);
@@ -290,6 +324,111 @@ table {
 					line-height: 30px;
 				}
 			}
+		}
+	}
+}
+
+///////////////////////
+///     Contact     ///
+///////////////////////
+
+.contact {
+	&__us {
+		&-left {
+			margin-bottom: 5em;
+
+			h2 {
+				font-size: 3rem;
+				margin-bottom: 1em;
+			}
+
+			form {
+				input,
+				textarea {
+					width: 100%;
+					padding: 1em;
+					margin-bottom: 2em;
+					border: 1px solid rgba(0, 0, 0, 0.3);
+					border-top-right-radius: variables.$radius;
+
+					&::placeholder {
+						font-weight: bold;
+						letter-spacing: 1px;
+						font-size: 1.6rem;
+					}
+				}
+
+				button {
+					width: 100%;
+					padding: 1em 2em;
+					font-size: 1.8rem;
+					text-transform: uppercase;
+					font-weight: bold;
+					background-color: colors.$main-color;
+					color: colors.$white;
+					border-radius: 8px;
+					border-top-right-radius: variables.$radius;
+				}
+			}
+		}
+
+		&-right {
+			&-item {
+				max-width: 350px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				column-gap: 2rem;
+				font-size: 1.8rem;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				margin: 0 auto;
+				padding: 1em;
+
+				&:not(&:last-child) {
+					margin-bottom: 2em;
+				}
+
+				.icon {
+					width: 40%;
+
+					i {
+						box-sizing: content-box;
+						width: 40px;
+						height: 40px;
+						padding: 0.3em;
+						color: colors.$main-color;
+						border: 1px solid colors.$main-color;
+						border-radius: 50%;
+						line-height: 40px;
+						text-align: center;
+					}
+				}
+
+				.content {
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					word-break: break-word;
+
+					span:first-child {
+						color: rgba(0, 0, 0, 0.7);
+						text-transform: uppercase;
+						font-style: 1.6rem;
+
+						& + * {
+							font-size: 2.2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__map {
+		margin-top: 5em;
+
+		iframe {
+			width: 100%;
 		}
 	}
 }
