@@ -60,6 +60,38 @@
 			}
 		}
 	}
+
+	.footer {
+		&__up {
+			&-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				padding-top: 10em;
+			}
+
+			&-logo,
+			&-text {
+				margin-bottom: 0em;
+			}
+
+			&-logo {
+				width: 15%;
+			}
+
+			&-text {
+				width: 40%;
+				max-width: 400px;
+			}
+		}
+
+		&__down {
+			&-images {
+				grid-template-columns: repeat(6, 1fr);
+				transform: translateY(-35%);
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {

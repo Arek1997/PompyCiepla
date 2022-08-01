@@ -28,6 +28,7 @@ body {
 	width: 100%;
 	background-color: #252525;
 	animation: move-down 0.5s linear;
+	z-index: 10;
 
 	.top-bar__down-container {
 		height: 70px;
@@ -328,8 +329,8 @@ table {
 
 		&-adress {
 			display: flex;
-			align-items: flex-start;
-			justify-content: center;
+			align-items: center;
+			justify-content: flex-start;
 			column-gap: 2rem;
 
 			i {
@@ -382,6 +383,33 @@ table {
 						transform: translateX(-50%);
 					}
 				}
+			}
+		}
+	}
+
+	&__down {
+		background-color: colors.$main-color;
+
+		&-images {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 4rem 2rem;
+			padding: 2em;
+
+			&-item {
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		&-copyright {
+			padding: 5em 3em;
+			text-align: center;
+
+			p {
+				font-size: 2rem;
+				font-weight: bold;
 			}
 		}
 	}

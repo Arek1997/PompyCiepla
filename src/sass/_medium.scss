@@ -94,4 +94,35 @@
 			}
 		}
 	}
+
+	.footer {
+		&__up {
+			&-container {
+				padding-bottom: 15em;
+			}
+
+			&-text {
+				p {
+					font-size: 2.2rem;
+				}
+			}
+
+			&-social {
+				gap: 0 1rem;
+			}
+		}
+
+		&__down {
+			&-images {
+				grid-template-columns: 1fr 1fr 1fr;
+				transform: translateY(-15%);
+				padding-bottom: 0;
+			}
+
+			&-copyright {
+				padding-top: 0;
+				padding-bottom: 8em;
+			}
+		}
+	}
 }
