@@ -3,6 +3,8 @@
 
 @media (min-width: 992px) {
 	.top-bar {
+		min-height: 180px;
+
 		&__up {
 			&-location {
 				width: 239px;
@@ -92,6 +94,27 @@
 			}
 		}
 	}
+
+	.contact {
+		margin-top: -110px;
+
+		&__us {
+			display: flex;
+			justify-content: space-between;
+			column-gap: 5rem;
+
+			&-left {
+				h2 {
+					font-size: 6rem;
+					max-width: 600px;
+				}
+			}
+
+			&-right {
+				width: 40%;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -135,6 +158,30 @@
 					top: 100%;
 					left: 0;
 					background-color: colors.$white;
+				}
+			}
+		}
+	}
+
+	.contact {
+		&__us {
+			&-right {
+				&-item {
+					padding: 2em 1em;
+
+					.icon {
+						text-align: right;
+					}
+
+					.content {
+						span:first-child {
+							font-size: 2rem;
+
+							& + * {
+								font-size: 2.5rem;
+							}
+						}
+					}
 				}
 			}
 		}

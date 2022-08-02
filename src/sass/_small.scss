@@ -48,4 +48,33 @@
 			}
 		}
 	}
+
+	.contact {
+		&__us {
+			&-left {
+				h2 {
+					font-size: 4rem;
+				}
+
+				form {
+					display: flex;
+					flex-wrap: wrap;
+
+					input[type='mail'] {
+						margin-right: 4%;
+					}
+
+					input[type='mail'],
+					input[type='tel'] {
+						width: 48%;
+					}
+
+					button {
+						width: 50%;
+						max-width: 250px;
+					}
+				}
+			}
+		}
+	}
 }
