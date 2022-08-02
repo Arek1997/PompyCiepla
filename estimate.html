@@ -98,7 +98,7 @@
 			</div>
 		</header>
 
-		<section class="section estimate">
+		<section class="estimate">
 			<div class="wrapper">
 				<div class="estimate__container">
 					<div class="estimate__top">
@@ -118,68 +118,120 @@
 							<div class="estimate__form-general">
 								<h3>Informacje ogólne</h3>
 								<label for="name">
-									Imię i nazwisko:
+									Imię i nazwisko
 									<input type="text" name="name" id="name" />
 								</label>
 
 								<label for="email">
-									Adres email:
+									Adres email
 									<input type="email" name="email" id="email" />
 								</label>
 
 								<label for="phone">
-									Numer telefonu:
+									Numer telefonu
 									<input type="tel" name="phone" id="phone" />
 								</label>
 
-								<label for="adress">
-									Adres:
-									<input type="text" name="adress" id="adress" />
+								<label for="street">
+									Ulica
+									<input type="text" name="street" id="street" />
+								</label>
+
+								<label for="zip-code">
+									Kod pocztowy
+									<input type="text" name="zip-code" id="zip-code" />
+								</label>
+
+								<label for="city">
+									Miasto
+									<input type="text" name="city" id="city" />
 								</label>
 							</div>
 
 							<div class="estimate__form-check-boxes">
 								<h3>Potrzebne do wyceny (zaznacz pasujące)</h3>
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-1"
+										id="pomp-1"
+										value="pomp-1"
+									/>
+									<label for="pomp-1">Pompa 1</label>
 								</div>
 
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-2"
+										id="pomp-2"
+										value="pomp-2"
+									/>
+									<label for="pomp-2">Pompa 2</label>
 								</div>
 
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-3"
+										id="pomp-3"
+										value="pomp-3"
+									/>
+									<label for="pomp-3">Pompa 3</label>
 								</div>
 
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-4"
+										id="pomp-4"
+										value="pomp-4"
+									/>
+									<label for="pomp-4">Pompa 4</label>
 								</div>
 
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-5"
+										id="pomp-5"
+										value="pomp-5"
+									/>
+									<label for="pomp-5">Pompa 5</label>
 								</div>
 
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-6"
+										id="pomp-6"
+										value="pomp-6"
+									/>
+									<label for="pomp-6">Pompa 6</label>
 								</div>
 
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-7"
+										id="pomp-7"
+										value="pomp-7"
+									/>
+									<label for="pomp-7">Pompa 7</label>
 								</div>
 
 								<div>
-									<input type="checkbox" name="pomp" id="pomp" value="pomp" />
-									<label for="pomp">Pompa</label>
+									<input
+										type="checkbox"
+										name="pomp-8"
+										id="pomp-8"
+										value="pomp-8"
+									/>
+									<label for="pomp-8">Pompa 8</label>
 								</div>
+							</div>
 
+							<div class="estimate__form-additives">
 								<label for="other">
 									Inne
 									<input type="text" name="other" id="other" />
@@ -198,16 +250,17 @@
 
 									<input
 										type="radio"
-										name="contact-preferred-mail"
+										name="contact-preferred"
 										id="contact-preferred-mail"
 										value="email"
 									/>
 									<label for="contact-preferred-mail">Mailowy</label>
 									<input
 										type="radio"
-										name="contact-preferred-phone"
+										name="contact-preferred"
 										id="contact-preferred-phone"
 										value="phone"
+										checked
 									/>
 									<label for="contact-preferred-phone">Telefoniczny</label>
 								</div>
@@ -222,16 +275,17 @@
 									</select>
 								</label>
 
-								<label for="news-letter">
-									Zapisz się na nasz newsletter!
+								<label class="newsletter" for="news-letter">
 									<input
 										type="checkbox"
 										name="news-letter"
 										id="news-letter"
 										value="news-letter"
 									/>
+									Zapisz się na nasz newsletter!
 								</label>
 							</div>
+
 							<button type="submit">Wyślij wiadomość</button>
 						</form>
 					</div>
