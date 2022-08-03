@@ -77,4 +77,25 @@
 			}
 		}
 	}
+
+	.estimate {
+		&__form-box {
+			button {
+				width: 50%;
+				max-width: 250px;
+			}
+		}
+
+		&__form-check-boxes {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: flex-start;
+			column-gap: 2rem;
+
+			h3 {
+				width: 100%;
+			}
+		}
+	}
 }

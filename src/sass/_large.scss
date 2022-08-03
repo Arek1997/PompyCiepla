@@ -115,6 +115,33 @@
 			}
 		}
 	}
+
+	.estimate {
+		margin-top: -110px;
+
+		&__top {
+			position: relative;
+			padding-top: 15em;
+
+			h2 {
+				font-size: 6.5rem;
+				margin-bottom: 0.5em;
+			}
+
+			p {
+				&:nth-of-type(1) {
+					max-width: 550px;
+				}
+			}
+
+			img {
+				display: block;
+				position: absolute;
+				bottom: 0;
+				right: 5%;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -186,7 +213,28 @@
 			}
 		}
 	}
+
+	.estimate {
+		&__top {
+			padding-bottom: 10em;
+
+			p {
+				&:nth-of-type(1) {
+					max-width: 750px;
+				}
+			}
+		}
+
+		&__form-box {
+			padding: 8em;
+		}
+	}
 }
 
 @media (min-width: 1400px) {
+	.estimate {
+		&__top {
+			padding-left: 0;
+		}
+	}
 }

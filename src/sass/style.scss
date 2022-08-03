@@ -437,6 +437,10 @@ table {
 .estimate {
 	margin-top: -88px;
 
+	&__container {
+		padding-bottom: 5em;
+	}
+
 	&__top {
 		padding: 5em 2em;
 
@@ -467,6 +471,10 @@ table {
 					color: colors.$main-color;
 				}
 			}
+		}
+
+		img {
+			display: none;
 		}
 	}
 
