@@ -403,6 +403,54 @@ table {
 }
 
 ///////////////////////
+///     Opinions    ///
+///////////////////////
+
+.opinions {
+	&__slider {
+		margin-bottom: 6em;
+
+		h3 {
+			font-size: 3rem;
+		}
+
+		&-item {
+			.rating {
+				margin-bottom: 3em;
+
+				span {
+					font-size: 12rem;
+					opacity: 0.8;
+					font-weight: bold;
+				}
+
+				i {
+					display: block;
+					font-size: 2rem;
+					color: #efd75b;
+					text-shadow: 25px 0 0 #efd75b, 50px 0 0 #efd75b, 75px 0 0 #efd75b,
+						100px 0 0 #efd75b;
+					margin-top: -10px;
+				}
+			}
+
+			.opinion {
+				p {
+					font-size: 2.5rem;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+
+	&__img {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+///////////////////////
 ///     Contact     ///
 ///////////////////////
 
