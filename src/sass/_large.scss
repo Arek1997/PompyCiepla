@@ -142,6 +142,39 @@
 			}
 		}
 	}
+
+	.quality {
+		margin-top: -110px;
+
+		&__container {
+			h2 {
+				max-width: 800px;
+				font-size: 6rem;
+			}
+		}
+
+		&__content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			column-gap: 10rem;
+		}
+
+		&__experience {
+			width: 40%;
+		}
+
+		&__img {
+			width: 60%;
+			max-width: 600px;
+
+			&-text {
+				h3 {
+					padding-right: 0em;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
