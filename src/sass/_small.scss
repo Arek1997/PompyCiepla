@@ -98,4 +98,38 @@
 			}
 		}
 	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 120%;
+	}
+
+	.opinions {
+		&__slider {
+			margin-bottom: 15em;
+
+			h3 {
+				font-size: 4rem;
+				margin-bottom: 1em;
+			}
+
+			&-item {
+				display: flex;
+
+				.rating {
+					padding-right: 5em;
+					margin-bottom: 0em;
+					border-right: 1px solid rgba(0, 0, 0, 0.2);
+				}
+
+				.opinion {
+					padding-left: 5em;
+
+					p {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
 }

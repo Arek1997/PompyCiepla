@@ -175,6 +175,35 @@
 			}
 		}
 	}
+
+	.swiper {
+		overflow: hidden;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 50%;
+	}
+
+	.opinions {
+		&__container {
+			display: flex;
+			column-gap: 5rem;
+			padding-top: 5em;
+		}
+
+		&__slider {
+			width: 60%;
+			margin-bottom: 0;
+
+			h3 {
+				font-size: 6rem;
+			}
+		}
+		&__img {
+			width: 40%;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -260,6 +289,12 @@
 
 		&__form-box {
 			padding: 8em;
+		}
+	}
+
+	.opinions {
+		&__container {
+			column-gap: 10rem;
 		}
 	}
 }

@@ -15,7 +15,16 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="dist/css/style.min.css" />
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+		></script>
+		<script defer src="dist/js/swiper.min.js"></script>
 		<script defer src="dist/js/script.min.js"></script>
 	</head>
 	<body>
@@ -153,20 +162,50 @@
 					<div class="opinions__container">
 						<div class="opinions__slider">
 							<h3>Which? Trusted Traders Customer Reviews</h3>
-							<div class="opinions__slider-box">
-								<div class="opinions__slider-item">
-									<div class="rating">
-										<span>5.0</span>
-										<i class="fa-solid fa-star"></i>
+							<div class="opinions__slider-box swiper">
+								<div class="swiper-wrapper">
+									<div class="opinions__slider-item swiper-slide">
+										<div class="rating">
+											<span>5.0</span>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="opinion">
+											<p>
+												"Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Odit ratione a accusamus voluptatum nesciunt
+												quibusdam esse assumenda ad maiores voluptates!"
+											</p>
+										</div>
 									</div>
-									<div class="opinion">
-										<p>
-											"Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-											Odit ratione a accusamus voluptatum nesciunt quibusdam
-											esse assumenda ad maiores voluptates!"
-										</p>
+									<div class="opinions__slider-item swiper-slide">
+										<div class="rating">
+											<span>5.0</span>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="opinion">
+											<p>
+												"Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Odit ratione a accusamus voluptatum nesciunt
+												quibusdam esse assumenda ad maiores voluptates!"
+											</p>
+										</div>
+									</div>
+									<div class="opinions__slider-item swiper-slide">
+										<div class="rating">
+											<span>5.0</span>
+											<i class="fa-solid fa-star"></i>
+										</div>
+										<div class="opinion">
+											<p>
+												"Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Odit ratione a accusamus voluptatum nesciunt
+												quibusdam esse assumenda ad maiores voluptates!"
+											</p>
+										</div>
 									</div>
 								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
 							</div>
 						</div>
 						<div class="opinions__img">

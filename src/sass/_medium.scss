@@ -274,4 +274,17 @@
 			}
 		}
 	}
+
+	.opinions {
+		&__slider {
+			h3 {
+				font-size: 4.5rem;
+			}
+		}
+		&__img {
+			img {
+				height: 600px;
+			}
+		}
+	}
 }
