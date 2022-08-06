@@ -287,4 +287,16 @@
 			}
 		}
 	}
+
+	.gallery {
+		&__container {
+			h2 {
+				font-size: 6rem;
+			}
+		}
+
+		&__box {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 }

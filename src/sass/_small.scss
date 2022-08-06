@@ -132,4 +132,17 @@
 			}
 		}
 	}
+
+	.gallery {
+		&__container {
+			h2 {
+				font-size: 5rem;
+			}
+		}
+
+		&__box {
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
+	}
 }

@@ -199,9 +199,25 @@
 			h3 {
 				font-size: 6rem;
 			}
+
+			&-item {
+				.rating {
+					height: 50%;
+				}
+			}
 		}
 		&__img {
 			width: 40%;
+		}
+	}
+
+	.gallery {
+		&__container {
+			padding: 6em 0;
+		}
+
+		&__box {
+			gap: 3rem;
 		}
 	}
 }
