@@ -19,14 +19,55 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 		/>
-
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery.min.css"
+			integrity="sha512-Szyqrwc8kFyWMllOpTgYCMaNNm/Kl8Fz0jJoksPZAWUqhE60VRHiLLJVcIQKi+bOMffjvrPCxtwfL+/3NPh/ag=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lg-zoom.min.css"
+			integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lg-thumbnail.min.css"
+			integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="dist/css/style.min.css" />
 		<script
 			defer
 			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
 		></script>
 		<script defer src="dist/js/swiper.min.js"></script>
-
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"
+			integrity="sha512-FDbnUqS6P7md6VfBoH57otIQB3rwZKvvs/kQ080nmpK876/q4rycGB0KZ/yzlNIDuNc+ybpu0HV3ePdUYfT5cA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/thumbnail/lg-thumbnail.min.js"
+			integrity="sha512-cavMj99wBO8HNDcMfXf1r6SGMFyrNYxq/Wle3vqeRNRHvlwvq2GRgwqQkPGxkXGXVa30WfF9bHEZmFK7T/Ya7g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js"
+			integrity="sha512-5kOfZonUGdOM0k5LCWttgUTvxceTa3DCwYtH3alvvE+oULFgoIN11oMIoubI1HcOXOmGDuuMvi00Px0HwHZsaQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script defer src="dist/js/lightGallery.min.js"></script>
 		<script defer src="dist/js/script.min.js"></script>
 	</head>
 	<body>
@@ -225,114 +266,78 @@
 				<div class="wrapper">
 					<div class="gallery__container">
 						<h2>Galeria naszych produktów</h2>
-						<div class="gallery__box">
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-1-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-1-sm.jpg" alt="Solar panel" />
-								</picture>
+						<div class="gallery__box" id="lightgallery">
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-1-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-1-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-2-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-2-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-3-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-3-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-4-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-4-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-4-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-4-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-5-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-5-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-6-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-6-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-6-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-3-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-5-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-5-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-2-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-2-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-3-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-1-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-1-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-6-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-3-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
 							</div>
-							<div class="gallery__box-item">
-								<picture>
-									<source
-										srcset="dist/img/gallery-img-4-lg.jpg"
-										media="(min-width: 1200px)"
-									/>
-									<img src="dist/img/gallery-img-4-sm.jpg" alt="Solar panel" />
-								</picture>
+							<div
+								class="gallery__box-item"
+								data-src="dist/img/gallery-img-6-sm.jpg"
+							>
+								<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
 							</div>
 						</div>
 					</div>
