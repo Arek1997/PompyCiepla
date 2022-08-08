@@ -27,27 +27,7 @@ const reduceScrollThrottling = function () {
 	}
 };
 
-const swapImageSrcAndDataSet = function () {
-	const imagesArr = document.querySelectorAll('.gallery__box-item img');
-
-	imagesArr.forEach((img) => {
-		const img_src = img.src;
-		const parentDataSet = img.parentElement.dataset.src;
-
-		if (mediaQuery.matches) {
-			img.src = img_src.replace('sm', 'lg');
-			img.parentElement.dataset.src = parentDataSet.replace('sm', 'lg');
-		} else {
-			img.src = img_src.replace('lg', 'sm');
-			img.parentElement.dataset.src = parentDataSet.replace('lg', 'sm');
-		}
-	});
-};
-
 setInterval(reduceScrollThrottling, 300);
-
-window.addEventListener('load', swapImageSrcAndDataSet);
-mediaQuery.addEventListener('change', swapImageSrcAndDataSet);
 
 window.addEventListener('scroll', function () {
 	flag = true;

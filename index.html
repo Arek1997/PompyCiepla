@@ -21,22 +21,8 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery.min.css"
-			integrity="sha512-Szyqrwc8kFyWMllOpTgYCMaNNm/Kl8Fz0jJoksPZAWUqhE60VRHiLLJVcIQKi+bOMffjvrPCxtwfL+/3NPh/ag=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lg-zoom.min.css"
-			integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lg-thumbnail.min.css"
-			integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g=="
+			href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe.min.css"
+			integrity="sha512-aKJqqX25Ch6C/Gae4xBq5gDKhUS2QcNrPoAxqy4fbLr9CqGq7uo/i0aRuti1TUYpZxjXuOr90cTP/aD9WY8CLQ=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
@@ -46,28 +32,6 @@
 			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
 		></script>
 		<script defer src="dist/js/swiper.min.js"></script>
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"
-			integrity="sha512-FDbnUqS6P7md6VfBoH57otIQB3rwZKvvs/kQ080nmpK876/q4rycGB0KZ/yzlNIDuNc+ybpu0HV3ePdUYfT5cA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/thumbnail/lg-thumbnail.min.js"
-			integrity="sha512-cavMj99wBO8HNDcMfXf1r6SGMFyrNYxq/Wle3vqeRNRHvlwvq2GRgwqQkPGxkXGXVa30WfF9bHEZmFK7T/Ya7g=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js"
-			integrity="sha512-5kOfZonUGdOM0k5LCWttgUTvxceTa3DCwYtH3alvvE+oULFgoIN11oMIoubI1HcOXOmGDuuMvi00Px0HwHZsaQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-		<script defer src="dist/js/lightGallery.min.js"></script>
 		<script defer src="dist/js/script.min.js"></script>
 	</head>
 	<body>
@@ -266,78 +230,138 @@
 				<div class="wrapper">
 					<div class="gallery__container">
 						<h2>Galeria naszych produktów</h2>
-						<div class="gallery__box" id="lightgallery">
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-1-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-1-sm.jpg" alt="Solar panel" />
+						<div class="gallery__box" id="my-gallery">
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-1-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-1-lg.jpg 768w, dist/img/gallery-img-1-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1075"
+									target="_blank"
+									>>
+									<img src="dist/img/gallery-img-1-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-2-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-2-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-2-lg.jpg 768w, dist/img/gallery-img-2-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1299"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-3-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-3-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-3-lg.jpg 768w, dist/img/gallery-img-3-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1277"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-4-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-4-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-4-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-4-lg.jpg 768w, dist/img/gallery-img-4-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1195"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-4-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-5-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-5-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-5-lg.jpg 768w, dist/img/gallery-img-5-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1439"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-6-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-6-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-6-lg.jpg 768w, dist/img/gallery-img-6-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1278"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-3-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-3-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-3-lg.jpg 768w, dist/img/gallery-img-3-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1277"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-5-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-5-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-5-lg.jpg 768w, dist/img/gallery-img-5-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1439"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-5-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-2-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-2-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-2-lg.jpg 768w, dist/img/gallery-img-2-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1299"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-2-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-1-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-1-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-1-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-1-lg.jpg 768w, dist/img/gallery-img-1-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1075"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-1-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-3-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-3-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-3-lg.jpg 768w, dist/img/gallery-img-3-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1277"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-3-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
-							<div
-								class="gallery__box-item"
-								data-src="dist/img/gallery-img-6-sm.jpg"
-							>
-								<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
+							<div class="gallery__box-item">
+								<a
+									href="dist/img/gallery-img-6-lg.jpg"
+									data-pswp-srcset="dist/img/gallery-img-6-lg.jpg 768w, dist/img/gallery-img-6-sm.jpg 280w"
+									data-pswp-width="1920"
+									data-pswp-height="1278"
+									target="_blank"
+								>
+									<img src="dist/img/gallery-img-6-sm.jpg" alt="Solar panel" />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -427,5 +451,19 @@
 	
 <footer/>
 
+
+		<script type="module">
+			import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe-lightbox.esm.min.js';
+
+			const lightbox = new PhotoSwipeLightbox({
+				gallery: '#my-gallery',
+				children: 'div',
+				pswpModule: () =>
+					import(
+						'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe.esm.min.js'
+					),
+			});
+			lightbox.init();
+		</script>
 	</body>
 </html>
