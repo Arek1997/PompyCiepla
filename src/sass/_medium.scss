@@ -126,6 +126,49 @@
 		}
 	}
 
+	.servis {
+		&__text-top {
+			padding-top: 9em;
+		}
+
+		&__article {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			column-gap: 4rem;
+
+			&:nth-of-type(even) {
+				.servis__article-text {
+					order: -1;
+				}
+			}
+
+			&-img,
+			&-text {
+				width: 50%;
+			}
+
+			&-img {
+				img {
+					margin: 0;
+					height: 240px;
+					object-fit: cover;
+				}
+			}
+		}
+
+		&__details {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+
+			&-item {
+				width: 30%;
+			}
+		}
+	}
+
 	.estimate {
 		&__container {
 			padding-bottom: 10em;

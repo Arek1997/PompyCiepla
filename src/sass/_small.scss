@@ -49,6 +49,54 @@
 		}
 	}
 
+	.servis {
+		p {
+			font-size: 2.5rem;
+		}
+
+		&__text-top {
+			h2 {
+				font-size: 5rem;
+			}
+		}
+
+		&__details {
+			&-item {
+				margin-bottom: 1em;
+			}
+		}
+
+		&__request {
+			&-text {
+				padding: 0 1em;
+
+				h2 {
+					font-size: 4rem;
+				}
+
+				button {
+					width: 50%;
+					max-width: 250px;
+				}
+			}
+
+			&-form {
+				form {
+					padding: 4em;
+
+					h3 {
+						font-size: 5rem;
+					}
+
+					button {
+						width: 50%;
+						max-width: 250px;
+					}
+				}
+			}
+		}
+	}
+
 	.contact {
 		&__us {
 			&-left {

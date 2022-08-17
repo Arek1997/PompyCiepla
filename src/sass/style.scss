@@ -71,6 +71,11 @@ table {
 	border-spacing: 0;
 }
 
+h2,
+h3 {
+	font-size: 3rem;
+}
+
 ///////////////////////
 ///     Top bar     ///
 ///////////////////////
@@ -274,7 +279,7 @@ table {
 				font-size: 1.8rem;
 				background-color: colors.$main-color;
 				border-radius: 8px;
-				border-top-right-radius: variables.$radius;
+				border-top-right-radius: variables.$radius-big;
 				font-weight: bold;
 				text-transform: uppercase;
 
@@ -341,7 +346,6 @@ table {
 		padding-top: 4em;
 
 		h2 {
-			font-size: 3rem;
 			margin-bottom: 1em;
 		}
 	}
@@ -464,10 +468,6 @@ table {
 	&__slider {
 		margin-bottom: 12em;
 
-		h3 {
-			font-size: 3rem;
-		}
-
 		&-item {
 			.rating {
 				margin-bottom: 3em;
@@ -515,7 +515,6 @@ table {
 
 	&__container {
 		h2 {
-			font-size: 3rem;
 			margin-bottom: 1em;
 		}
 	}
@@ -538,6 +537,119 @@ table {
 }
 
 ///////////////////////
+///     Servis      ///
+///////////////////////
+
+.servis {
+	margin-top: -88px;
+
+	p {
+		font-size: 2.2rem;
+		opacity: 0.8;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 5rem;
+
+		& > * {
+			padding: 0 2em;
+		}
+	}
+
+	&__text-top {
+		padding: 4.8em 2em 0;
+
+		h2 {
+			margin-bottom: 1em;
+		}
+	}
+
+	&__article {
+		&-img {
+			img {
+				width: 100%;
+				margin: 3em 0;
+			}
+		}
+	}
+
+	&__details {
+		&-item {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			p {
+				position: relative;
+				margin-left: 1em;
+				opacity: 1;
+
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0%;
+					top: 50%;
+					width: 10px;
+					height: 10px;
+					transform: translate(-200%, -25%);
+					border-radius: 50%;
+					border: 1px solid colors.$main-color;
+				}
+			}
+		}
+	}
+
+	&__request {
+		padding: 8em 1em;
+		color: colors.$white;
+		background-image: url('../../dist/img/servis-background.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+
+		&-text {
+			margin-bottom: 8em;
+			padding: 0 2em;
+
+			& > * {
+				margin-bottom: 0.5em;
+			}
+
+			button {
+				@include mixins.formButton;
+			}
+		}
+
+		&-form {
+			background-color: colors.$main-color;
+
+			form {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 4em 2em;
+
+				h3 {
+					margin-bottom: 1em;
+
+					text-transform: uppercase;
+				}
+
+				@include mixins.contactFormStyle;
+
+				button {
+					@include mixins.formButton;
+					background-color: colors.$light-dark;
+				}
+			}
+		}
+	}
+}
+
+///////////////////////
 ///     Contact     ///
 ///////////////////////
 
@@ -549,26 +661,11 @@ table {
 			margin-bottom: 5em;
 
 			h2 {
-				font-size: 3rem;
 				margin-bottom: 1em;
 			}
 
 			form {
-				input,
-				textarea {
-					width: 100%;
-					padding: 1em;
-					margin-bottom: 1em;
-					font-size: 2rem;
-					border: 1px solid rgba(0, 0, 0, 0.3);
-					border-top-right-radius: variables.$radius;
-
-					&::placeholder {
-						font-weight: bold;
-						letter-spacing: 1px;
-						font-size: 1.8rem;
-					}
-				}
+				@include mixins.contactFormStyle;
 
 				button {
 					@include mixins.formButton;
@@ -652,7 +749,6 @@ table {
 		padding: 5em 2em;
 
 		h2 {
-			font-size: 3rem;
 			margin-bottom: 1em;
 		}
 
@@ -693,7 +789,6 @@ table {
 		h3 {
 			margin-bottom: 1em;
 			text-align: center;
-			font-size: 3rem;
 		}
 
 		button {

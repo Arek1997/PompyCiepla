@@ -95,6 +95,37 @@
 		}
 	}
 
+	.servis {
+		&__text-top {
+			padding: 9em;
+
+			h2 {
+				font-size: 6rem;
+				margin-bottom: 0.5em;
+			}
+		}
+
+		&__request {
+			&-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+			}
+
+			&-text {
+				width: 30%;
+
+				button {
+					width: 100%;
+				}
+			}
+
+			&-form {
+				width: 50%;
+			}
+		}
+	}
+
 	.contact {
 		margin-top: -110px;
 
