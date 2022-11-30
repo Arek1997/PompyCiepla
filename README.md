@@ -18,9 +18,11 @@ Then i also want to rid of not necessary code, add some animation and effects.
 ## Tech/framework used 🔧
 
 - HTML
-- SCSS
+- CSS ( SCSS, BEM, FlexBox, Rem, Em, RWD )
 - JS
+- NPM
 - Gulp
+- Third party library
 
 ## Screenshots 📺
 
